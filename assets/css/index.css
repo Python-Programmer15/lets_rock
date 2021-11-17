@@ -1,0 +1,231 @@
+@import 'utilities.css';
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternary: #898989;
+    --light:#f2f2f2;
+    --secondary:#070606;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container
+{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+section
+{
+    padding: 6rem 0;
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+.section-heading span{
+    color: var(--primary);
+}
+
+.services .card-wrapper img{
+    background-color: var(--primary);
+    width: 65px;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+section.services{
+    background: var(--light);
+    clip-path: polygon(0 0,100% 0,100% 100% ,67% 87%,0 100%);
+}
+
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+}
+
+section.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all .3s;
+    border-radius: 6px;
+}
+
+section.services .card-wrapper .card img{
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.services .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+section.services .card-wrapper .card:hover h2, section.card-wrapper .card :hover p{
+    color: var(--pure);
+}
+
+.left a{
+    color: var(--ternary);
+    transition: all 0.3s ease;
+}
+
+.left a:hover{
+    color: var(--primary);
+}
+
+.work .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-gap: 2rem;
+}
+
+.work .card-wrapper img{
+    width: 100%;
+}
+.work .card-wrapper .card{
+    position: relative;
+}
+.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb( 61, 207, 211, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.work .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+.work .card-wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+.work .card-wrapper .card .overlay a:hover{
+    color: var(--light);
+    text-decoration: none;
+}
+
+@media (max-width:1024px){
+    .work .card-wrapper {
+        grid-template-columns: repeat( 2, 1fr);
+    }
+}
+@media (max-width:576px) {
+    section{
+        padding: 3rem 0;
+    }
+
+    .work .card-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    section.services{
+    clip-path: polygon(0 0,100% 0,100% 100% ,70% 95%,0 100%);
+    padding-bottom: 9rem;
+    }
+}
+@media (max-width:474px){
+    .erase{
+        display: none !important;
+    } 
+}
+
+/* slogan section */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    /* border-bottom: #e67e22; */
+  }
+  h2:after{
+    display: block;
+    height: 2px;
+    background-color: #38ef38;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  .box{
+    padding:3% 6%;
+    align-items: center;
+    justify-content: center;
+  }
+  .box h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom: 15px;
+  }
+  .box p{
+    font-size: 90%;
+    line-height: 145%;
+  
+  }
+  .box img{
+    width: 400px;
+  }
+  .section-cities{
+    background-color: #d9d9d9;
+  }
+
+  .rest img{
+      width: 250px;
+  }
