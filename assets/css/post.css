@@ -86,17 +86,20 @@ body{
     height: 100%;
     left: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
 }
 .creative{
     position: fixed;
-    height: 47%;
-    right: 0;
+    height: 40%;
+    left: 0;
     bottom: 20px;
     z-index: -1;
 }
 @media screen and (max-width: 900px){
     .wave{
+        display: none;
+    }
+    .creative{
         display: none;
     }
 }
