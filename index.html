@@ -122,8 +122,10 @@
           <div class="overlay">
             <span>Category</span>
             <!-- <a href="#">Web Development</a> -->
-            <div class="menu">
-              <div class="toggle"><ion-icon name="flame-outline"></ion-icon></div>
+            <div class="menu" id="menu1">
+              <div class="toggle" id="toggle1">
+                <ion-icon name="flame-outline"></ion-icon>
+              </div>
               <li style="--i:0">
                 <a href="#">
                   <ion-icon name="share-social-outline"></ion-icon>
@@ -158,9 +160,10 @@
         <div class="card">
           <div class="overlay">
             <span>Category</span>
-            <div class="menu">
-               <div class="menu">
-              <div class="toggle"><ion-icon name="flame-outline"></ion-icon></div>
+            <div class="menu" id="menu2">
+              <div class="toggle" id="toggle2">
+                <ion-icon name="flame-outline"></ion-icon>
+              </div>
               <li style="--i:0">
                 <a href="#">
                   <ion-icon name="share-social-outline"></ion-icon>
@@ -186,7 +189,6 @@
                   <ion-icon name="cloud-download-outline"></ion-icon>
                 </a>
               </li>
-            </div>
             </div>
           </div>
           <img src="./images/partition.jpg" alt="">
@@ -195,9 +197,10 @@
         <div class="card">
           <div class="overlay">
             <span>Category</span>
-            <div class="menu">
-               <div class="menu">
-              <div class="toggle"><ion-icon name="flame-outline"></ion-icon></div>
+            <div class="menu" id="menu3">
+              <div class="toggle" id="toggle3">
+                <ion-icon name="flame-outline"></ion-icon>
+              </div>
               <li style="--i:0">
                 <a href="#">
                   <ion-icon name="share-social-outline"></ion-icon>
@@ -223,7 +226,6 @@
                   <ion-icon name="cloud-download-outline"></ion-icon>
                 </a>
               </li>
-            </div>
             </div>
           </div>
           <img src="./images/free-ecommerce-website-templates.jpg" alt="">
@@ -232,9 +234,10 @@
         <div class="card">
           <div class="overlay">
             <span>Category</span>
-            <div class="menu">
-               <div class="menu">
-              <div class="toggle"><ion-icon name="flame-outline"></ion-icon></div>
+            <div class="menu" id="menu4">
+              <div class="toggle" id="toggle4">
+                <ion-icon name="flame-outline"></ion-icon>
+              </div>
               <li style="--i:0">
                 <a href="#">
                   <ion-icon name="share-social-outline"></ion-icon>
@@ -260,7 +263,6 @@
                   <ion-icon name="cloud-download-outline"></ion-icon>
                 </a>
               </li>
-            </div>
             </div>
           </div>
           <img src="./images/1574474686 Molla - eCommerce HTML Template.jpg" alt="">
@@ -269,9 +271,10 @@
         <div class="card">
           <div class="overlay">
             <span>Category</span>
-            <div class="menu">
-               <div class="menu">
-              <div class="toggle"><ion-icon name="flame-outline"></ion-icon></div>
+            <div class="menu" id="menu5">
+              <div class="toggle" id="toggle5">
+                <ion-icon name="flame-outline"></ion-icon>
+              </div>
               <li style="--i:0">
                 <a href="#">
                   <ion-icon name="share-social-outline"></ion-icon>
@@ -297,7 +300,6 @@
                   <ion-icon name="cloud-download-outline"></ion-icon>
                 </a>
               </li>
-            </div>
             </div>
           </div>
           <img src="./images/1574474686 Molla - eCommerce HTML Template.jpg" alt="">
@@ -306,9 +308,10 @@
         <div class="card">
           <div class="overlay">
             <span>Category</span>
-            <div class="menu">
-               <div class="menu">
-              <div class="toggle"><ion-icon name="flame-outline"></ion-icon></div>
+            <div class="menu" id="menu6">
+              <div class="toggle" id="toggle6">
+                <ion-icon name="flame-outline"></ion-icon>
+              </div>
               <li style="--i:0">
                 <a href="#">
                   <ion-icon name="share-social-outline"></ion-icon>
@@ -334,7 +337,6 @@
                   <ion-icon name="cloud-download-outline"></ion-icon>
                 </a>
               </li>
-            </div>
             </div>
           </div>
           <img src="./images/1574474686 Molla - eCommerce HTML Template.jpg" alt="">
@@ -348,10 +350,35 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script>
-    let toggle = document.querySelector('.toggle');
-    let menu = document.querySelector('.menu');
-    toggle.onclick = function(){
+    let toggle = document.querySelector('#toggle1');
+    let menu = document.querySelector('#menu1');
+    toggle.onclick = function () {
       menu.classList.toggle('active')
+    }
+    let toggle2 = document.querySelector('#toggle2');
+    let menu2 = document.querySelector('#menu2');
+    toggle2.onclick = function () {
+      menu2.classList.toggle('active')
+    }
+    let toggle3 = document.querySelector('#toggle3');
+    let menu3 = document.querySelector('#menu3');
+    toggle3.onclick = function () {
+      menu3.classList.toggle('active')
+    }
+    let toggle4 = document.querySelector('#toggle4');
+    let menu4 = document.querySelector('#menu4');
+    toggle4.onclick = function () {
+      menu4.classList.toggle('active')
+    }
+    let toggle5 = document.querySelector('#toggle5');
+    let menu5 = document.querySelector('#menu5');
+    toggle5.onclick = function () {
+      menu5.classList.toggle('active')
+    }
+    let toggle6 = document.querySelector('#toggle6');
+    let menu6 = document.querySelector('#menu6');
+    toggle6.onclick = function () {
+      menu6.classList.toggle('active')
     }
   </script>
 </body>
