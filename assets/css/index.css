@@ -123,11 +123,17 @@ section
 
 .work .card-wrapper .card .overlay .menu{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+}
+
+.work .card-wrapper .card .overlay .menu.active{
+    width: 200px;
+    height: 200px;
 }
 
 .work .card-wrapper .card .overlay .menu li{
@@ -137,7 +143,7 @@ section
     transform-origin: 100px;
     transition: 0.5s;
     transition-delay: calc(0.1s * var(--i));
-    transform: rotate(0deg) translateX(80px);
+    transform: rotate(0deg) translateX(40px);
 }
 
 .work .card-wrapper .card .overlay .menu.active li{
@@ -146,8 +152,8 @@ section
 
 .work .card-wrapper .card .overlay .menu li a{
     background: #fff;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
